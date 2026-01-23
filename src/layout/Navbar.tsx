@@ -44,7 +44,14 @@ export const Navbar = () => {
         </div>
 
         <div className="hidden md:block ">
-          <button className="w-35 h-15 rounded-full bg-primary flex items-center justify-center gap-2">
+          <button
+            onClick={() =>
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="w-35 h-15 rounded-full bg-primary flex items-center justify-center gap-2"
+          >
             {" "}
             Contact me
             <UserSearch />
@@ -73,7 +80,12 @@ export const Navbar = () => {
             ))}
 
             <button
-              onClick={() => setIsOpenMenu(false)}
+              onClick={() => {
+                setIsOpenMenu(false);
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="w-full h-15 rounded-full bg-primary flex items-center justify-center gap-2"
             >
               {" "}
