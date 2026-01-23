@@ -5,7 +5,6 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#project", label: "Project" },
   { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonial" },
 ];
 
 export const Navbar = () => {
@@ -20,7 +19,7 @@ export const Navbar = () => {
   });
   return (
     <header
-      className={`sticky top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : " bg-transparent py-5"} bg-transparent py-5`}
+      className={`sticky top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3" : " bg-transparent py-5"} bg-transparent py-5 z-index-9999`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a

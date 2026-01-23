@@ -24,7 +24,7 @@ const skills = [
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen  flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <img
           alt="Hero img"
@@ -147,7 +147,7 @@ export const Hero = () => {
           <div className="relative overflow-hidden">
             <div className="flex animate-marquee">
               {[...skills, ...skills].map((skill, i) => (
-                <div key={i} className="flex-shrink-0 px-8 py-4">
+                <div key={i} className="flex shrink-0 px-8 py-4">
                   <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
                     {skill}
                   </span>
