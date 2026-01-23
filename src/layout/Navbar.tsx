@@ -34,7 +34,7 @@ export const Navbar = () => {
           <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
             {navLinks.map((link, index) => (
               <a
-                href="{link.href}"
+                href={link.href}
                 key={index}
                 className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
               >
@@ -64,15 +64,19 @@ export const Navbar = () => {
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, index) => (
               <a
-                href="{link.href}"
+                href={link.href}
                 key={index}
+                onClick={() => setIsOpenMenu(false)}
                 className="text-lg text-muted-foreground hover:text-foreground py-2"
               >
                 {link.label}
               </a>
             ))}
 
-            <button className="w-full h-15 rounded-full bg-primary flex items-center justify-center gap-2">
+            <button
+              onClick={() => setIsOpenMenu(false)}
+              className="w-full h-15 rounded-full bg-primary flex items-center justify-center gap-2"
+            >
               {" "}
               Contact me
               <UserSearch />
