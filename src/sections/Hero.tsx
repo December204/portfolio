@@ -1,13 +1,6 @@
 import heroBg from "../assets/hero-bg.png";
 import profile from "../assets/profile-photo.jpg";
-import {
-  ArrowRight,
-  ChevronDown,
-  Download,
-  Facebook,
-  GithubIcon,
-  Instagram,
-} from "lucide-react";
+import { ChevronDown, Facebook, GithubIcon, Instagram } from "lucide-react";
 
 const skills = [
   "React",
@@ -78,18 +71,6 @@ export const Hero = () => {
                 Nodejs, and TypeScript. I build scalable, performant web
                 application that users love
               </p>
-            </div>
-            {/* Contact/CV */}
-            <div className="flex gap-2 animation-delay-300 animate-fade-in">
-              <button className="cursor-pointer w-35 h-15  rounded-full flex items-center justify-center font-medium focus:outline-none focus-visible:ring-2 focus-visible : ring-primary text-primary-foreground hover: bg-primary/90 shadow-lg shadow-primary/90">
-                Contact me <ArrowRight size={24} />
-              </button>
-              <button className="cursor-pointer bg-secondary w-40 h-15 rounded-full ">
-                <span className="flex items-center justify-center gap-1">
-                  <Download className="mb-1" />
-                  Download CV
-                </span>
-              </button>
             </div>
             {/* Social media */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
